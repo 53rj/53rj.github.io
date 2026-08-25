@@ -1,1 +1,99 @@
+/* Grundeinstellungen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #1f2937;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d1d5db;
+}
+
+/* Hauptbereich */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Sektionen */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    header {
+        padding: 40px 15px 30px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
