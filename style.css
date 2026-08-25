@@ -60,6 +60,34 @@ section p {
     margin-bottom: 10px;
 }
 
+/* About */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-content p {
+    margin: 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.skills span {
+    padding: 6px 12px;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
 /* Dokumente */
 
 .documents-wrapper {
