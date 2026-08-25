@@ -1,4 +1,7 @@
-/* Grundeinstellungen */
+/* ========================================
+   Grundeinstellungen
+======================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +19,11 @@ body {
     color: #222;
 }
 
-/* Header */
+
+/* ========================================
+   Header
+======================================== */
+
 header {
     text-align: center;
     padding: 60px 20px 40px;
@@ -34,14 +41,22 @@ header p {
     color: #d1d5db;
 }
 
-/* Hauptbereich */
+
+/* ========================================
+   Hauptbereich
+======================================== */
+
 main {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
 }
 
-/* Sektionen */
+
+/* ========================================
+   Sektionen
+======================================== */
+
 section {
     background-color: white;
     padding: 30px;
@@ -49,7 +64,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
 
 section h2 {
     margin-bottom: 15px;
@@ -60,7 +74,25 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Über mich */
+
+/* ========================================
+   Globale Links
+======================================== */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   Über mich
+======================================== */
 
 #about {
     padding: 32px;
@@ -71,7 +103,8 @@ section p {
     margin-bottom: 12px;
 }
 
-/* Fakten direkt unter der Überschrift */
+
+/* Fakten */
 
 .about-facts {
     display: flex;
@@ -88,7 +121,8 @@ section p {
     color: #4b5563;
 }
 
-/* Text */
+
+/* Beschreibung */
 
 .about-content {
     max-width: 780px;
@@ -103,7 +137,8 @@ section p {
     color: #2563eb;
 }
 
-/* Technologien */
+
+/* Skills */
 
 .about-skills {
     display: flex;
@@ -123,13 +158,19 @@ section p {
     font-weight: bold;
 }
 
-/* Dokumente */
+
+/* ========================================
+   Dokumente
+======================================== */
 
 .documents-wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
+
+/* Komplette Bewerbungsmappe */
 
 .document-main {
     display: flex;
@@ -145,15 +186,21 @@ section p {
     display: inline-block;
     width: fit-content;
     padding: 12px 18px;
+
     background-color: #2563eb;
     color: white;
+
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .document-highlight:hover {
     text-decoration: none;
     opacity: 0.9;
 }
+
+
+/* Dokumentgruppen */
 
 .document-group {
     border-top: 1px solid #ddd;
@@ -165,10 +212,13 @@ section p {
     font-size: 1.05rem;
 }
 
+
+/* Lebenslauf-Sprachen */
+
 .document-links {
     display: flex;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .document-links a {
@@ -177,25 +227,13 @@ section p {
     border-radius: 6px;
 }
 
+
+/* Dokumentliste */
+
 .document-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.document-list a {
-    display: block;
-    padding: 12px 14px;
-    background-color: #f8f9fa;
-    border-radius: 6px;
-}
-
-.document-list span {
-    display: block;
-    margin-top: 3px;
-    font-size: 0.85rem;
-    color: #666;
-    font-weight: normal;
 }
 
 .document-item {
@@ -205,6 +243,7 @@ section p {
     gap: 20px;
 
     padding: 12px 14px;
+
     background-color: #f8f9fa;
     border-radius: 6px;
 }
@@ -216,6 +255,7 @@ section p {
 
 .document-item a {
     flex-shrink: 0;
+
     padding: 7px 12px;
 
     background-color: #2563eb;
@@ -227,6 +267,7 @@ section p {
 }
 
 .document-item a:hover {
+    text-decoration: none;
     opacity: 0.9;
 }
 
@@ -239,30 +280,23 @@ section p {
     font-weight: normal;
 }
 
-/* Links */
-a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-a:hover {
-    text-decoration: underline;
-}
+/* ========================================
+   Kontakt
+======================================== */
 
-/* Contact */
 .contact-intro {
     margin-bottom: 20px;
 }
 
 .contact-links {
     display: flex;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .contact-button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 12px;
 
@@ -280,31 +314,52 @@ a:hover {
 }
 
 .contact-button:hover {
+    color: white;
     text-decoration: none;
     transform: translateY(-2px);
     opacity: 0.9;
 }
 
+
+/* Kontakt-Icons */
+
 .contact-button svg {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
+    display: block;
+
+    width: 28px !important;
+    height: 28px !important;
+
+    min-width: 28px;
+    min-height: 28px;
+
+    max-width: 28px;
+    max-height: 28px;
+
+    flex: 0 0 28px;
 }
 
-.contact-button div {
+
+/* Kontakt-Text */
+
+.contact-button > div {
     display: flex;
     flex-direction: column;
+    line-height: 1.3;
 }
 
 .contact-name {
-    font-weight: bold;
+    color: white;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .contact-description {
+    color: white;
     font-size: 0.8rem;
+    font-weight: normal;
     opacity: 0.8;
 }
+
 
 /* GitHub */
 
@@ -312,24 +367,18 @@ a:hover {
     background-color: #24292f;
 }
 
+
 /* LinkedIn */
 
 .linkedin-button {
     background-color: #0a66c2;
 }
 
-/* Mobile */
 
-@media (max-width: 600px) {
-    .contact-links {
-        flex-direction: column;
-    }
+/* ========================================
+   Footer
+======================================== */
 
-    .contact-button {
-        width: 100%;
-    }
-}
-/* Footer */
 footer {
     text-align: center;
     padding: 25px;
@@ -337,34 +386,13 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Smartphone */
+
+/* ========================================
+   Smartphone
+======================================== */
+
 @media (max-width: 600px) {
-    .document-item {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-    }
 
-        #about {
-        padding: 22px;
-    }
-
-    .about-facts {
-        gap: 7px;
-    }
-
-    .about-facts span {
-        font-size: 0.8rem;
-    }
-
-    .about-content {
-        font-size: 0.95rem;
-    }
-
-    .document-item a {
-        width: 100%;
-        text-align: center;
-    }
     header {
         padding: 40px 15px 30px;
     }
@@ -380,5 +408,49 @@ footer {
 
     section {
         padding: 20px;
+    }
+
+
+    /* Über mich */
+
+    #about {
+        padding: 22px;
+    }
+
+    .about-facts {
+        gap: 7px;
+    }
+
+    .about-facts span {
+        font-size: 0.8rem;
+    }
+
+    .about-content {
+        font-size: 0.95rem;
+    }
+
+
+    /* Dokumente */
+
+    .document-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .document-item a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* Kontakt */
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-button {
+        width: 100%;
     }
 }
