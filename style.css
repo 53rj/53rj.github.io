@@ -60,32 +60,67 @@ section p {
     margin-bottom: 10px;
 }
 
-/* About */
+/* Über mich */
+
+#about {
+    padding: 32px;
+}
+
+#about h2 {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+/* Fakten direkt unter der Überschrift */
+
+.about-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.about-facts span {
+    padding: 7px 12px;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4b5563;
+}
+
+/* Text */
 
 .about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    max-width: 780px;
 }
 
 .about-content p {
-    margin: 0;
+    margin-bottom: 14px;
+    line-height: 1.7;
 }
 
-.skills {
+.about-content strong {
+    color: #2563eb;
+}
+
+/* Technologien */
+
+.about-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 20px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
 }
 
-.skills span {
-    padding: 6px 12px;
-    background-color: #f3f4f6;
-    border-radius: 20px;
-    font-size: 0.9rem;
+.about-skills span {
+    padding: 7px 14px;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
     font-weight: bold;
-    color: #1f2937;
 }
 
 /* Dokumente */
@@ -229,6 +264,22 @@ footer {
         align-items: flex-start;
         flex-direction: column;
         gap: 10px;
+    }
+
+        #about {
+        padding: 22px;
+    }
+
+    .about-facts {
+        gap: 7px;
+    }
+
+    .about-facts span {
+        font-size: 0.8rem;
+    }
+
+    .about-content {
+        font-size: 0.95rem;
     }
 
     .document-item a {
