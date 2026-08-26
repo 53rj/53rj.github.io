@@ -158,6 +158,102 @@ a:hover {
     font-weight: bold;
 }
 
+/* ========================================
+   Projekte
+======================================== */
+
+.projects-intro {
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    background-color: #f8f9fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+
+.project-language {
+    flex-shrink: 0;
+
+    padding: 4px 9px;
+
+    background-color: #e5e7eb;
+    color: #4b5563;
+
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.project-description {
+    flex-grow: 1;
+
+    margin-bottom: 18px;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    margin-top: auto;
+}
+
+.project-button {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    background-color: #24292f;
+    color: white;
+
+    border-radius: 6px;
+    font-size: 0.85rem;
+
+    text-decoration: none;
+}
+
+.project-button:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.project-error {
+    color: #666;
+}
 
 /* ========================================
    Dokumente
@@ -410,7 +506,10 @@ footer {
         padding: 20px;
     }
 
-
+   .project-grid {
+    grid-template-columns: 1fr;
+}
+   
     /* Über mich */
 
     #about {
