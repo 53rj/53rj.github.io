@@ -44,7 +44,7 @@ async function loadProjects() {
                             rel="noopener noreferrer"
                             class="project-button"
                         >
-                            GitHub ↗
+                            Öffnen ↗
                         </a>
                     </div>
                 `;
