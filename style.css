@@ -166,21 +166,27 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Projekte */
+
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
+    gap: 12px;
 
     padding: 20px;
 
     background-color: #f8f9fa;
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
     transition:
         transform 0.2s ease,
@@ -189,19 +195,18 @@ a:hover {
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .project-card-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
-
-    margin-bottom: 12px;
+    gap: 12px;
 }
 
 .project-card h3 {
+    margin: 0;
     font-size: 1.1rem;
     color: #1f2937;
 }
@@ -209,12 +214,13 @@ a:hover {
 .project-language {
     flex-shrink: 0;
 
-    padding: 4px 9px;
+    padding: 4px 10px;
 
     background-color: #e5e7eb;
     color: #4b5563;
 
     border-radius: 20px;
+
     font-size: 0.75rem;
     font-weight: bold;
 }
@@ -222,9 +228,11 @@ a:hover {
 .project-description {
     flex-grow: 1;
 
-    margin-bottom: 18px;
+    margin: 0;
+
     color: #4b5563;
     font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .project-links {
@@ -234,13 +242,15 @@ a:hover {
 .project-button {
     display: inline-block;
 
-    padding: 7px 12px;
+    padding: 8px 13px;
 
     background-color: #24292f;
     color: white;
 
     border-radius: 6px;
+
     font-size: 0.85rem;
+    font-weight: bold;
 
     text-decoration: none;
 }
